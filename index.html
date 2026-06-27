@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraHeal Bug Test: Broken Grid Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Explicitly forcing a layout container height constraint 
+           to ensure overflowing content clips visibly */
+        .card-container {
+            height: 380px;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen p-8 flex flex-col items-center justify-center">
+
+    <div class="max-w-4xl w-full space-y-6">
+        <header class="text-center">
+            <h1 class="text-2xl font-bold text-violet-400">AuraHeal.AI Mutation Sandbox Test</h1>
+            <p class="text-xs text-slate-400 mt-1">This viewport grid container fails responsiveness thresholds on mobile.</p>
+        </header>
+
+        <div class="card-container grid grid-cols-3 gap-4 bg-slate-950 p-6 rounded-xl border border-white/5 overflow-hidden">
+            
+            <div class="bg-slate-900 p-4 rounded-lg border border-white/5 flex flex-col justify-between">
+                <div class="w-8 h-8 bg-violet-500/10 text-violet-400 flex items-center justify-center rounded font-bold text-sm">01</div>
+                <h3 class="text-sm font-semibold text-white mt-2 truncate">System Ingestion Engine</h3>
+                <p class="text-[11px] text-slate-400 mt-1 leading-snug">Concurrent browser viewport multi-resolution automated snapshot pipeline configuration nodes mapping DOM positions.</p>
+            </div>
+
+            <div class="bg-slate-900 p-4 rounded-lg border border-white/5 flex flex-col justify-between">
+                <div class="w-8 h-8 bg-cyan-500/10 text-cyan-400 flex items-center justify-center rounded font-bold text-sm">02</div>
+                <h3 class="text-sm font-semibold text-white mt-2 truncate">Agentic Mesh Routing</h3>
+                <p class="text-[11px] text-slate-400 mt-1 leading-snug">Deterministic LangGraph orchestration tracking internal state mutations alongside structured JSON schema token maps.</p>
+            </div>
+
+            <div class="bg-slate-900 p-4 rounded-lg border border-white/5 flex flex-col justify-between">
+                <div class="w-8 h-8 bg-emerald-500/10 text-emerald-400 flex items-center justify-center rounded font-bold text-sm">03</div>
+                <h3 class="text-sm font-semibold text-white mt-2 truncate">Self-Healing Deploy</h3>
+                <p class="text-[11px] text-slate-400 mt-1 leading-snug">Asynchronous code patch execution engines modifying structural stylesheets utilizing native GitOps branch tracking operations.</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
